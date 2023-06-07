@@ -5,9 +5,12 @@ import { useRouter } from 'next/navigation';
 
 const Logo = () => {
     const router = useRouter();
+
+
     return (
         <Image
-            alt='Logo'
+        onClick={() => router.push('/')}
+        alt='Logo'
             className='hidden md:block cursor-pointer bg-white'
             height="100"
             width="100"
